@@ -11,7 +11,35 @@ namespace COMP2007_Lab2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ActiveClass();
+        }
 
+        /**
+        *   This method adds the current active class to the list
+        *   of items in the main navbar
+        *   @method ActiveClass()
+        *   @return (void)
+        */
+        private void ActiveClass()
+        {
+            switch (Page.Title)
+            {
+                case "Home Page":
+                    home.Attributes.Add("class", "active");
+                    break;
+                case "Products Page":
+                    products.Attributes.Add("class", "active");
+                    break;
+                case "Services Page":
+                    services.Attributes.Add("class", "active");
+                    break;
+                case "About Page":
+                    about.Attributes.Add("class", "active");
+                    break;
+                case "Contact Page":
+                    contact.Attributes.Add("class", "active");
+                    break;
+            }
         }
     }
 }
