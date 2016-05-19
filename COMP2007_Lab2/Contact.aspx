@@ -28,7 +28,11 @@
                      <label class="control-label" for="MessageTextBox">Message</label>
                      <asp:TextBox runat="server" textmode="MultiLine" columns="5" Rows="5" CssClass="form-control" ID="MessageTextBox" placeholder="Your Message" required="true"></asp:TextBox>
                  </div>
-                 <asp:Button CssClass="btn btn-primary" Text="Send" runat="server" />
+                 <div class="text-right">
+                     <asp:Button CssClass="btn btn-primary btn-lg" ID="Button1" Text="Send" runat="server" OnClick="sendButton_Click" />
+                     <asp:Button CssClass="btn btn-danger btn-lg" ID="cancelButton" Text="Cancel" runat="server" OnClick="cancelButton_Click"/>
+                     
+                 </div>
              </div>
          </div>
     </div>
