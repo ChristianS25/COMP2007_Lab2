@@ -1,13 +1,30 @@
 ﻿<%@ Page Title="Contact Page" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="COMP2007_Lab2.Contact" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-     <div class="container">
-        
+<!--
+/*  
+* File Name: Contact.aspx
+* Author: Christian Simpson
+* Web Site Name: http://christiansimpsonlab2.azurewebsites.net/
+*/
+--> 
+
+    <div class="container">
 
          <div class="row">
              <div class="col-md-offset-3 col-md-6">
                  <h1>Contact Page</h1>
+
+                 <div class="well"> 
+                    <h4>Phone Number</h4>
+                    <p>519-215-2127</p>
+                    <h4>Email</h4>
+                     <p>ChristianRSimpson25@gmail.com</p>
+                 </div>
+                 
+
                  <div class="form-group">
                      <label class="control-label" for="FirstNameTextBox">First Name</label>
                      <asp:TextBox runat="server" CssClass="form-control" ID="FirstNameTextBox" placeholder="First Name" required="true"></asp:TextBox>

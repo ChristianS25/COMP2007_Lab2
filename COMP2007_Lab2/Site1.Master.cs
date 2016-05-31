@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  
+* File Name: Site1.Master.cs
+* Author: Christian Simpson
+* Web Site Name: http://christiansimpsonlab2.azurewebsites.net/
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,7 +24,7 @@ namespace COMP2007_Lab2
         *   This method adds the current active class to the list
         *   of items in the main navbar
         *   @method ActiveClass()
-        *   @return (void)
+        *   @returns (void)
         */
         private void ActiveClass()
         {
